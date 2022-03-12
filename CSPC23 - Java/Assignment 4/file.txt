@@ -1,0 +1,3 @@
+hello, world    // 3, 7
+!@#$            // 0, 0
+wIgGleWoO       // 4, 5
