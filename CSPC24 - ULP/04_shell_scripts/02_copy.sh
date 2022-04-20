@@ -9,4 +9,5 @@ read paste_file
 
 cat $copy_file > $paste_file
 
-echo "Copied the contents of $copy_file to $paste_file successfully!"
+echo -e "\nContent in new file:"
+cat $paste_file

@@ -8,7 +8,7 @@ if [ -d "$name" ]
 then
 	echo "$name is a directory."
 
-elif [ -f "$name"]
+elif [ -f "$name" ]
 then
     echo "$name is a file."
 
