@@ -1,16 +1,19 @@
-; Display AbCdEf...
+; WAP to print the pattern AaaBbbCcc...
 
 .code
 start:
     mov dl, 'A'
-    mov cl, 13
+    mov cl, 26
 
     L:
         mov ah, 02h
         int 21h
-        inc dl
 
         add dl, 32
+
+        mov ah, 02h
+        int 21h
+
         mov ah, 02h
         int 21h
 

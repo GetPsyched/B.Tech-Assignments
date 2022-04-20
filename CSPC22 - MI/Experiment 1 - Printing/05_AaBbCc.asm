@@ -1,4 +1,4 @@
-; Display AaaBbbCcc...
+; WAP to print the pattern AaBbCc...
 
 .code
 start:
@@ -10,9 +10,6 @@ start:
         int 21h
 
         add dl, 32
-
-        mov ah, 02h
-        int 21h
 
         mov ah, 02h
         int 21h

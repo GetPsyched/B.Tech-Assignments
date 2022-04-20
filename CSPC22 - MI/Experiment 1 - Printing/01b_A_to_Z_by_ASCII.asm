@@ -1,8 +1,8 @@
-; Display A-Z by alphabet
+; WAP to print the alphabets A-Z by ASCII
 
 .code
 start:
-    mov dl, 'A'
+    mov dl, 65
     mov cl, 26
 
     L:

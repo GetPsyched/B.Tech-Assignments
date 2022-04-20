@@ -1,9 +1,9 @@
-; Display A-Z by ASCII
+; WAP to print the ASCII table
 
 .code
 start:
-    mov dl, 65
-    mov cl, 26
+    mov dl, 0
+    mov cx, 256
 
     L:
         mov ah, 02h

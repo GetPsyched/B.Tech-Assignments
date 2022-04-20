@@ -1,4 +1,4 @@
-; Display 0-9
+; WAP to print the numbers from 0-9
 
 .code
 start:

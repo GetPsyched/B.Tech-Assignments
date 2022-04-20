@@ -1,9 +1,9 @@
-; Display ASCII table
+; WAP to print the alphabets a-z by character
 
 .code
 start:
-    mov dl, 0
-    mov cx, 256
+    mov dl, 'a'
+    mov cl, 26
 
     L:
         mov ah, 02h
