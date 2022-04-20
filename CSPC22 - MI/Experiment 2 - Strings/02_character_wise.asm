@@ -1,7 +1,7 @@
-; Print string character-wise in 16-bit
+; WAP to print a string character-wise
 
 .data
-string dw "Hello, World!$"
+string db "Hello, World!$"
 
 .code
 start:
@@ -10,7 +10,7 @@ start:
     mov si, offset string
 
     L:
-        mov dx, [si]
+        mov dl, [si]
         mov ah, 02h
         int 21h
         inc si

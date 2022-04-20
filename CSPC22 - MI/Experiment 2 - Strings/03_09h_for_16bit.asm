@@ -1,4 +1,4 @@
-; Print using 09h in 16-bit
+; WAP to print a 16-bit string using 09h
 
 .data
 string dw "Hello, World!$"

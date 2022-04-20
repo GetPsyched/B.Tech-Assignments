@@ -1,7 +1,7 @@
-; Print name in reverse
+; WAP to convert a given string into its reverse form
 
 .data
-name db "Priyanshu Tripathi$"
+name db "Hello, World$"
 
 .code
 start:

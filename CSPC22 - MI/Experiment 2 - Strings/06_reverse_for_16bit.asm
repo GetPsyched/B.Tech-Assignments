@@ -1,4 +1,4 @@
-; Print string in reverse in 16-bit
+; WAP to convert a given 16-bit string into its reverse form
 
 .data
 string dw "Hello, World!$"

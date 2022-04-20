@@ -1,4 +1,4 @@
-; Print using 09h
+; WAP to print a string using 09h
 
 .data
 string db "Hello, World!$"
