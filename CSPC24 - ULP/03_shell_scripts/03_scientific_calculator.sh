@@ -13,44 +13,36 @@ cat << MENU
     d) Exponential Operations
 
 MENU
-echo '
-Enter your Choice: \c'
-read choice
+read -p 'Enter your choice: ' choice
 
 case $choice in
 
-    a) echo "\nEnter expression: "
-        read exp
-        cal()
+    a)  read -p 'Enter expression --> ' exp
+        calc() {
             awk "BEGIN{print $*}";
-        echo "Answer: " `cal $exp`
+        }
+        echo 'Answer: ' `calc $exp`
         ;;
 
-    b) echo "\nEnter Trigonometric function : "
-            read exp
-            echo "Degree: "
-            read degree
+    b)  read -p 'Enter a trigonometric function --> ' exp
+        read -p 'Enter the degree --> ' degree
 
         e=$(awk "BEGIN{print $exp($degree*atan2(0,-1)/180)}")
-            echo "
-            $exp($degree)= $e"
-            ;;
+        echo '
+        $exp($degree)= $e'
+        ;;
 
-        c) echo "\nEnter the logarithmic value: "
-            read value
-            echo $value | awk '{printf "%11.9f\n",log($1)/log(10)}'
-            ;;
+    c)  read -p 'Enter a logarithmic value --> ' value
+        echo $value | awk '{printf "%11.9f\n",log($1)/log(10)}'
+        ;;
 
-        d) echo "\nEnter the base number x: "
-        read x
-        echo "Enter exponent number y: "
-        read y
-        E=$(echo "$x 1" | awk "{print (($x/1)^$y)}")
-        echo "$x^$y = $E"
-            ;;
-        *)
-            break;;
-        *)
-            break;;
+    d)  read -p 'Enter the base number x --> ' x
+        read -p 'Enter exponent number y --> ' y
+        e=$(echo "$x 1" | awk "{print (($x/1)^$y)}")
+        echo '$x^$y = $e'
+        ;;
+    *)
+        break;;
+
 esac
 done
