@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>(a) Timetable</title>
+    <style>
+        @font-face {
+            font-family: "montserrat";
+            src: url('Montserrat-Regular.otf');
+        }
+
+        html {
+            font-size: 120%;
+            font-family: Consolas;
+            background-color: #a9a9a9;
+        }
+
+        table,
+        th,
+        td {
+            color: black;
+            border: 1px solid black;
+            text-align: center;
+            min-width: 70px;
+            height: 22px;
+        }
+
+        table {
+            width: 80%;
+            border-spacing: 0;
+            background-color: black;
+        }
+
+        caption {
+            font-size: 60px;
+            font-family: "montserrat";
+        }
+
+        td {
+            background-color: orange;
+        }
+
+        .day {
+            background-color: #F28500;
+            height: 78px;
+        }
+
+        .break {
+            background: gray;
+        }
+    </style>
+</head>
+<center>
+    <table>
+        <caption>CS-B Timetable</caption>
+        <thead style="background-color: #F28500;">
+            <th>Day</th>
+            <th>8:30</th>
+            <th>9:25</th>
+            <th>10:40</th>
+            <th>11:35</th>
+            <th>12:30</th>
+            <th>1:45</th>
+            <th>2:40</th>
+            <th>3:35</th>
+            <th>4:30</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="day">Monday</td>
+                <td rowspan="3" colspan="2">WD-P</td>
+                <td rowspan="3">DS-L</td>
+                <td rowspan="3">MA-L</td>
+                <td rowspan="3">OOPs-L</td>
+                <td>CH-T</td>
+                <td rowspan="3" class="break"></td>
+                <td rowspan="3">CH-L</td>
+                <td rowspan="3">DSD-L</td>
+            </tr>
+            <tr>
+                <td class="break"></td>
+            </tr>
+            <tr>
+                <td>PH-T</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Tuesday</td>
+                <td rowspan="3">EE-L</td>
+                <td rowspan="3">PH-L</td>
+                <td rowspan="3" colspan="2" class="break"></td>
+                <td rowspan="3" colspan="2">PH-P</td>
+                <td rowspan="3">OOPs-L</td>
+                <td rowspan="3" class="break"></td>
+                <td>MA-T</td>
+            </tr>
+            <tr>
+                <td>EE-T</td>
+            </tr>
+            <tr>
+                <td>CH-T</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Wednesday</td>
+                <td rowspan="3" colspan="2" class="break"></td>
+                <td colspan="2" class="break"></td>
+                <td rowspan="3">DSD-L</td>
+                <td rowspan="3">DS-L</td>
+                <td rowspan="3">CH-L</td>
+                <td rowspan="3">MA-L</td>
+                <td>PH-T</td>
+            </tr>
+            <tr>
+                <td>CH-T</td>
+                <td>MA-T</td>
+                <td class="break"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="break"></td>
+                <td>EE-T</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Thursday</td>
+                <td colspan="2">DS-P</td>
+                <td rowspan="3" colspan="2">CH-P</td>
+                <td rowspan="3">DSD-L</td>
+                <td rowspan="3" class="break"></td>
+                <td rowspan="3">WD-P</td>
+                <td rowspan="3" class="break"></td>
+                <td rowspan="3">OOPs-L</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2" class="break"></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="3" class="day">Friday</td>
+                <td rowspan="3" class="break"></td>
+                <td rowspan="3">PH-L</td>
+                <td rowspan="3">EE-L</td>
+                <td rowspan="3">MA-L</td>
+                <td rowspan="3" class="break"></td>
+                <td>EE-T</td>
+                <td colspan="2" rowspan="3" class="break"></td>
+                <td class="break"></td>
+            </tr>
+            <tr>
+                <td>PH-T</td>
+                <td rowspan="2">DS-P</td>
+            </tr>
+            <tr>
+                <td>MA-T</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Saturday</td>
+                <td rowspan="3">PH-L</td>
+                <td rowspan="3">WD-L</td>
+                <td rowspan="3">EE-L</td>
+                <td rowspan="3">MA-L</td>
+                <td rowspan="3">DSD-L</td>
+                <td rowspan="3">OOPs-L</td>
+                <td rowspan="3">DS-L</td>
+                <td rowspan="3" class="break"></td>
+                <td rowspan="3">CH-L</td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+
+</html>
