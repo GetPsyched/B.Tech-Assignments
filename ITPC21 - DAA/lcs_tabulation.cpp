@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 static int arr[7][8];
-void lcs(string X, string Y, int i, int j)
+void lcs(string &X, string &Y, int i, int j)
 {
     if (i == 0 || j == 0)
         arr[i][j] = 0;
